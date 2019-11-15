@@ -11,7 +11,7 @@ server.use(express.json());
 server.use(cors());
 
 server.use('/users', UserRouter);
-server.use('/students', restrict, StudentsRouter);
+server.use('/students', StudentsRouter);
 server.use('/messages', restrict, MessagesRouter);
 server.use('/projects', restrict, ProjectsRouter);
 
